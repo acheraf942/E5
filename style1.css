@@ -1,0 +1,64 @@
+/* Style de la liste des activités */
+.menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu li:hover > a {
+  background-color: #f1f1f1;
+}
+
+.menu li:hover a.partie {
+  background-color: transparent;
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+.menu li ul li {
+  width: 100%;
+  text-align: left;
+}
+
+.menu li ul li a {
+  padding: 10px;
+}
+
+/* Style des boutons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
